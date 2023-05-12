@@ -1,4 +1,4 @@
-package javacollection.arraylist;
+package javacollection.arraylist.sortemployee;
 
 public class Employee {
 
@@ -37,6 +37,16 @@ public class Employee {
 
     public void setSalary(long salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                '}';
     }
 
     public Employee(int id, String name, int age, long salary) {

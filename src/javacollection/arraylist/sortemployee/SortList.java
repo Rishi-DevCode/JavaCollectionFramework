@@ -1,7 +1,6 @@
-package javacollection.arraylist;
+package javacollection.arraylist.sortemployee;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class SortList {
@@ -36,6 +35,11 @@ public class SortList {
     }
     class Mysort implements Comparable<Employee>{
 
+
+        @Override
+        public int compareTo(Employee employee) {
+            return Employee.getSalary();
+        }
     }
 
 }
